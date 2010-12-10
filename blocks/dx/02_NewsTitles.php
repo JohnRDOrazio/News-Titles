@@ -1,6 +1,11 @@
-<script type="text/javascript" src="http://www.google.com/jsapi"></script>
 <script typt="text/javascript">
-google.load("jquery", "1");
+if (typeof jQuery == 'undefined') {  
+  var headID = document.getElementsByTagName("head")[0];         
+  var newScript = document.createElement('script');
+  newScript.type = 'text/javascript';
+  newScript.src = 'http://www.somedomain.com/somescript.js';
+  headID.appendChild(newScript);
+}
 jQuery(document).ready(function(){
 
   // according to whether the block is on the right or left side of the page, keep the scrollbar external
@@ -54,15 +59,15 @@ jQuery(document).ready(function(){
 
 /* Blocco Flatnux che visualizza le notizie della sezione "News"
    con uno scorrimento verticale automatico.
-   Ogni titolo è un link al messaggio completo.
-   Quando non si è nella sezione news, compare un link alla sezione News in fondo al blocco (in italiano).
+   Ogni titolo ï¿½ un link al messaggio completo.
+   Quando non si ï¿½ nella sezione news, compare un link alla sezione News in fondo al blocco (in italiano).
    Utilizza il tag Marquee, e dalla versione 1.5 utilizza la libreria jquery
 
-   v 1.4 Aggiunta una barra laterale destra che con il mouseover cambia la direzione dello scorrimento in su o in giù.
+   v 1.4 Aggiunta una barra laterale destra che con il mouseover cambia la direzione dello scorrimento in su o in giï¿½.
 
-   v 1.5 Migliorata la grafica e migliorata la funzionalità della barra laterale destra che controlla con il mouseover sia
+   v 1.5 Migliorata la grafica e migliorata la funzionalitï¿½ della barra laterale destra che controlla con il mouseover sia
 
-         la direzione che la velocità dello scorrimento, utilizzando la libreria jquery
+         la direzione che la velocitï¿½ dello scorrimento, utilizzando la libreria jquery
 
    v 1.6 Utilizza jquery per verificare se il blocco si trova effettivamente nella colonna destra oppure no,
 
@@ -72,9 +77,9 @@ jQuery(document).ready(function(){
 
    v 1.6.5  Qualche ritocco al aspetto grafico; semplificata la struttura; aggiunto un div sopra che tiene la notizia
 
-         più recente
+         piï¿½ recente
 
-   v 1.7 Aggiunto in fondo il link per aggiungere una notizia se si è amministratori delle news
+   v 1.7 Aggiunto in fondo il link per aggiungere una notizia se si ï¿½ amministratori delle news
 
    v 2.0 Aggiornato in base alle esigenze di php 5.3 (funzioni ereg* deprecated) e migliorato
          il modo dell'integrazione con flatnux
