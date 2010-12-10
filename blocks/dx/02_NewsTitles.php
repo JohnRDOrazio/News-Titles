@@ -3,9 +3,19 @@ if (typeof jQuery == 'undefined') {
   var headID = document.getElementsByTagName("head")[0];         
   var newScript = document.createElement('script');
   newScript.type = 'text/javascript';
-  newScript.src = 'http://www.somedomain.com/somescript.js';
+  newScript.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js';
   headID.appendChild(newScript);
 }
+if (typeof jQuery.ui == 'undefined') {
+  var headID = document.getElementsByTagName("head")[0];         
+  var newScript = document.createElement('script');
+  newScript.type = 'text/javascript';
+  newScript.src = 'http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js';
+  headID.appendChild(newScript);
+}
+
+
+
 jQuery(document).ready(function(){
 
   // according to whether the block is on the right or left side of the page, keep the scrollbar external
