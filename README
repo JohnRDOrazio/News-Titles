@@ -23,5 +23,6 @@ Changelog:
    v 1.7 Aggiunto in fondo il link per aggiungere una notizia se si è amministratori delle news
    v 2.0 Aggiornato in base alle esigenze di php 5.3 (funzioni ereg* deprecated) e migliorato
          il modo dell'integrazione con flatnux
-   v 2.1 Il blocco è ora configurabile dagli amministratori del sito quando utilizzato insieme al tema "glorioso" con Modalità Modifica ON.
+   v 2.1 Il blocco è ora configurabile dagli amministratori del sito quando utilizzato insieme al tema "glorioso"
+        con Modalità Modifica ON.
 
