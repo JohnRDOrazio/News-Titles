@@ -1,1 +1,27 @@
-Block for Flatnux with a marquee that scrolls through the Flatnux site's latest news titles
+ENGLISH:
+Block for Flatnux with a marquee that scrolls through the Flatnux site's latest news titles from the "News" section.
+Every title is a link to the full message.
+When not in the news section, a link to the News section appears at the bottom of the block.
+This block makes use of the Marquee tag, and since version 1.5 uses the jQuery library.
+
+ITALIANO:
+Blocco Flatnux che visualizza le notizie della sezione "News" con uno scorrimento verticale automatico.
+Ogni titolo è un link al messaggio completo.
+Quando non si è nella sezione news, compare un link alla sezione News in fondo al blocco.
+Utilizza il tag Marquee, e dalla versione 1.5 utilizza la libreria jquery
+
+
+Changelog:
+   v 1.4 Aggiunta una barra laterale destra che con il mouseover cambia la direzione dello scorrimento in su o in giù.
+   v 1.5 Migliorata la grafica e migliorata la funzionalità della barra laterale destra che controlla con il mouseover sia
+         la direzione che la velocità dello scorrimento, utilizzando la libreria jquery
+   v 1.6 Utilizza jquery per verificare se il blocco si trova effettivamente nella colonna destra oppure no,
+         e lo costruisce dinamicamente a seconda se sta nella colonna destra o sinistra, invertendo tra di loro
+         il marquee e la barra laterale
+   v 1.6.5  Qualche ritocco al aspetto grafico; semplificata la struttura; aggiunto un div sopra che tiene la notizia
+         più recente
+   v 1.7 Aggiunto in fondo il link per aggiungere una notizia se si è amministratori delle news
+   v 2.0 Aggiornato in base alle esigenze di php 5.3 (funzioni ereg* deprecated) e migliorato
+         il modo dell'integrazione con flatnux
+   v 2.1 Il blocco è ora configurabile dagli amministratori del sito quando utilizzato insieme al tema "glorioso" con Modalità Modifica ON.
+
