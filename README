@@ -24,5 +24,5 @@ Changelog:
    v 2.0 Aggiornato in base alle esigenze di php 5.3 (funzioni ereg* deprecated) e migliorato
          il modo dell'integrazione con flatnux
    v 2.1 Il blocco è ora configurabile dagli amministratori del sito quando utilizzato insieme al tema "glorioso"
-        con Modalità Modifica ON.
+         con Modalità Modifica ON.
 
