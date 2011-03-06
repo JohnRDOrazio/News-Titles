@@ -13,8 +13,12 @@ Utilizza il tag Marquee, e dalla versione 1.5 utilizza la libreria jquery
 
 Changelog:
    v 1.4 Aggiunta una barra laterale destra che con il mouseover cambia la direzione dello scorrimento in su o in giù.
+<<<<<<< HEAD
    v 1.5 Migliorata la grafica e migliorata la funzionalità della barra laterale destra che controlla con il mouseover
          sia la direzione che la velocità dello scorrimento, utilizzando la libreria jquery
+=======
+   v 1.5 Migliorata la grafica e migliorata la funzionalità della barra laterale destra che controlla con il mouseover sia la direzione che la velocità dello scorrimento, utilizzando la libreria jquery
+>>>>>>> 33df525840b414e308fd47fc4cdbb324dce23fbc
    v 1.6 Utilizza jquery per verificare se il blocco si trova effettivamente nella colonna destra oppure no,
          e lo costruisce dinamicamente a seconda se sta nella colonna destra o sinistra, invertendo tra di loro
          il marquee e la barra laterale
