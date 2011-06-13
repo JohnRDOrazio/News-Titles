@@ -25,4 +25,5 @@ Changelog:
          il modo dell'integrazione con flatnux
    v 2.1 Il blocco è ora configurabile dagli amministratori del sito quando utilizzato insieme al tema "glorioso"
          con Modalità Modifica ON.
+   v 2.2 Corretti alcuni errori di encoding... (La funzione get_file(), definita in shared.php, utilizza fgets, che non supporta UTF-8 e richiede un nuovo encoding)
 

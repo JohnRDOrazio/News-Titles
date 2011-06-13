@@ -5,14 +5,20 @@
    Quando non si è nella sezione news, compare un link alla sezione News in fondo al blocco (in italiano).
    Utilizza il tag Marquee. Dalla versione 1.5 utilizza jquery.
    v 1.4 Aggiunta una barra laterale destra che con il mouseover cambia la direzione dello scorrimento in su o in giù.
-   v 1.5 Migliorata la grafica e migliorata la funzionalità della barra laterale con l'utilizzo di jquery. Controlla sia
-         la direzione che la velocità dello scorrimento.
-   v 1.6 Utilizzo di jquery per determinare se il blocco si trova nella colonna destra o sinistra, o lo costruisce
-         dinamicamente affinché la barra laterale sia sempre esterna.
-   v 1.6.5 Ritoccato l'aspetto grafico, corretto un problema col character set che si presenta su alcuni server,
-         semplificata la struttura
-   v 1.6.6 Corretto ancora problemi di charset con la funzione get_file() (viene da shared.php, utilizza fgets)
-   */
+   v 1.5 Migliorata la grafica e migliorata la funzionalità della barra laterale destra che controlla con il mouseover
+         sia la direzione che la velocità dello scorrimento, utilizzando la libreria jquery
+   v 1.6 Utilizza jquery per verificare se il blocco si trova effettivamente nella colonna destra oppure no,
+         e lo costruisce dinamicamente a seconda se sta nella colonna destra o sinistra, invertendo tra di loro
+         il marquee e la barra laterale
+   v 1.6.5  Qualche ritocco al aspetto grafico; semplificata la struttura; aggiunto un div sopra che tiene la notizia
+         più recente
+   v 1.7 Aggiunto in fondo il link per aggiungere una notizia se si è amministratori delle news
+   v 2.0 Aggiornato in base alle esigenze di php 5.3 (funzioni ereg* deprecated) e migliorato
+         il modo dell'integrazione con flatnux
+   v 2.1 Il blocco è ora configurabile dagli amministratori del sito quando utilizzato insieme al tema "glorioso"
+         con Modalità Modifica ON.
+   v 2.2 Corretti alcuni errori di encoding... (La funzione get_file(), definita in shared.php, utilizza fgets, che non supporta UTF-8 e richiede un nuovo encoding)
+ *    */
 // *** lwangaman sets the document headers to avoid the Internet Explorer cache-problem
 header( "Cache: no-cache" );
 header( "Pragma: no-cache" );
